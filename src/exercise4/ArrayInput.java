@@ -3,14 +3,15 @@ package exercise4;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayInputOutput {
+public class ArrayInput {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        int length = input.nextInt();
 
-        int[] numbers = new int[5];
+        int[] numbers = new int[length];
 
-        System.out.println("Enter numbers: ");
+        
         for (int index = 0; index < numbers.length; index++) {
             numbers[index] = input.nextInt();
         }
